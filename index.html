@@ -15,7 +15,9 @@
     <div class="row">
         <div class="col-sm">
             <div class="alert alert-secondary button" role="alert">
-                <h1 class="text-center">週  日  狼  人  殺</h1>
+                <h1 class="text-center">週日狼人
+                    <a onclick="reloadpage()">殺</a>
+                </h1>
             </div>
         </div>
     </div>
@@ -253,6 +255,10 @@
             }
         }
         element.className = element.className.replace(oldBg, newBg);
+    }
+
+    function reloadpage(){
+        document.location.reload();
     }
 
 
