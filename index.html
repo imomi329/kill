@@ -63,6 +63,7 @@
     <div class="row">
         <div class="col-sm">
             <div class="alert alert-success button" role="alert">
+                <!-- row one 123 -->
                 <div class="row">
                     <div class="col">
                         <div id="1" class="btn btn-lg btn-block btn-secondary" onclick="change(1)">1</div>
@@ -75,6 +76,7 @@
                     </div>
                 </div>
                 <hr/>
+                <!-- row two 456 -->
                 <div class="row">
                     <div class="col">
                         <div id="4" class="btn btn-lg btn-block btn-secondary" onclick="change(4)">4</div>
@@ -87,6 +89,7 @@
                     </div>
                 </div>
                 <hr/>
+                <!-- row three 789 -->
                 <div class="row">
                     <div class="col">
                         <div id="7" class="btn btn-lg btn-block btn-secondary" onclick="change(7)">7</div>
@@ -99,6 +102,7 @@
                     </div>
                 </div>
                 <hr/>
+                <!-- row four 101112 -->
                 <div class="row">
                     <div class="col">
                         <div id="10" class="btn btn-lg btn-block btn-secondary" onclick="change(10)">10</div>
@@ -109,6 +113,250 @@
                     <div class="col">
                         <div id="12" class="btn btn-lg btn-block btn-secondary" onclick="change(12)">12</div>
                     </div>
+                </div>
+                <hr/>
+                <!-- row five make input -->
+                <div class="row">
+                    <div class="col-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-lg btn-block btn-secondary" type="button">死亡順序</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="1,2,3" aria-label="1,2,3" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-lg btn-block btn-secondary" type="button">預言順序</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="1,2,3" aria-label="1,2,3" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-lg btn-block btn-secondary" type="button">解/毒藥</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="宗" aria-label="宗" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="庭" aria-label="庭" aria-describedby="basic-addon1">
+                        </div>
+
+                    </div>
+                </div>
+                <hr/>
+                <!-- row six learn and test -->
+                <div class="row">
+                    <!-- follow -->
+                    <div class="col-6">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#followModal">
+                            導讀順序
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="followModal" tabindex="-1" role="dialog" aria-labelledby="followModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="followModalLabel">主持人導讀</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                天黑了，請閉眼 （所有人此時閉眼）<br/>
+                                                ----------------------------------------<br/>
+                                                ***** 準備階段 *****<br/>
+                                                1.小偷(盜賊)<br/>2.邱比特<br/>3.戀人(拍肩)<br/>
+                                                ***** 遊戲開始 *****<br/>
+                                                1.守衛<br/>234.預言家、狼人、女巫<br/>567.獵人、騎士、白痴<br/>
+                                                ***** 白天階段 *****<br/>
+                                                0.選警長<br/>1.指出亡者<br/>2.亡者發動技能<br/>3.戀人同亡<br/>4.發言開始<br/>5.投票<br/>
+
+                                                ----------------------------------------<br/>
+                                                狼人請睜眼，狼人請相互認識，你要殺的人是......。<br/>
+                                                （確定指認一人後）好，狼人請閉眼。<br/>
+                                                ----------------------------------------<br/>
+                                                預言家請睜眼，請指出你要查驗的對象是？<br/>
+                                                這是好人(大拇指向上)，這是壞人(大拇指向下），他的身份是......<br/>
+                                                好，預言家請閉眼。<br/>
+                                                ----------------------------------------<br/>
+                                                女巫請睜眼，今晚被殺的人是......（用手比號碼），你要救嗎？<br/>
+                                                請問你要毒的人是？<br/>
+                                                好，女巫請閉眼。 （解藥、毒藥一晚只能使用一種）<br/>
+                                                ----------------------------------------<br/>
+                                                ......請睜眼，好，......請閉眼。(確認其他神職身份)<br/>
+                                                ----------------------------------------<br/>
+                                                天亮了，平安夜 or ...號死亡<br/>
+                                                ----------------------------------------<br/>
+                                                ----------------------------------------<br/>
+
+
+                                                　　推荐游戏人数：9人，11人，14人，17人。<br/>
+                                                <br/>
+                                                　　6~7人：1先知 1守护 2狼 2~3民<br/>
+                                                <br/>
+                                                　　8~9人：1女巫 1爱神 2狼 4~5民<br/>
+                                                <br/>
+                                                　　10~11人：1女巫 1先知 1爱神 3狼 4~5民<br/>
+                                                <br/>
+                                                　　12~13人：1女巫 1先知 1爱神 1混血 1守护 3狼 4~5民<br/>
+                                                <br/>
+                                                　　14~15人：1女巫 1先知 1爱神 1混血 1守护 1猎人 4狼 4~5民<br/>
+                                                <br/>
+                                                　　16人：1女巫 1先知 1爱神 1混血 1守护 1猎人 1村长 4狼 5民<br/>
+                                                <br/>
+                                                　　17人：1女巫 1先知 1爱神 1混血 1守护 1猎人 1村长 5狼 5民<br/>
+                                                <br/>
+                                                　　18人：1女巫 1先知 1爱神 1混血 1守护 1猎人 1村长 1白痴 5狼 5民<br/>
+                                                <br/>
+                                            </div>
+                                                <!--<div class="col-sm">-->
+                                                    <!--<div class="alert alert-success button" role="alert">-->
+                                                        <!--<div class="row">-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">狼王</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">狼人</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">平民</button>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-sm">-->
+                                                    <!--<div class="alert alert-success button" role="alert">-->
+                                                        <!--<div class="row">-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">預言家</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">女巫</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">獵人</button>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-sm">-->
+                                                    <!--<div class="alert alert-success button" role="alert">-->
+                                                        <!--<div class="row">-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">騎士</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">白痴</button>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="col-4">-->
+                                                                <!--<button type="button" class="btn btn-secondary">低能</button>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- test -->
+                    <div class="col-6">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            測試中....
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">請選擇角色</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <div class="alert alert-success button" role="alert">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">狼王</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">狼人</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">平民</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <div class="alert alert-success button" role="alert">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">預言家</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">女巫</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">獵人</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm">
+                                                    <div class="alert alert-success button" role="alert">
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">騎士</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">白痴</button>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <button type="button" class="btn btn-secondary">低能</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 </div>
                 <hr/>
 
@@ -122,83 +370,6 @@
 
 
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    測試中....
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">請選擇角色</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <div class="alert alert-success button" role="alert">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">狼王</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">狼人</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">平民</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <div class="alert alert-success button" role="alert">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">預言家</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">女巫</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">獵人</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <div class="alert alert-success button" role="alert">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">騎士</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">白痴</button>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <button type="button" class="btn btn-secondary">低能</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
         </div>
